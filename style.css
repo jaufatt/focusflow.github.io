@@ -1,1 +1,170 @@
+:root {
+  --bg: #050814;
+  --bg2: #0b1022;
+  --accent: #35d0c8;
+  --accent-soft: rgba(53, 208, 200, 0.35);
+  --text-main: #f7f9ff;
+  --text-soft: #c4c8d8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  background:
+    radial-gradient(circle at top, #18224a 0, var(--bg) 45%, #02030a 100%);
+  color: var(--text-main);
+  line-height: 1.7;
+  padding: 40px 20px 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Top nav */
+
+nav {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+nav a {
+  color: var(--accent);
+  margin: 0 14px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Card + layout */
+
+.card {
+  position: relative;
+  background: rgba(5, 8, 20, 0.92);
+  border-radius: 24px;
+  padding: 32px 26px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+/* Decorative glow “graphics” */
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, var(--accent-soft), transparent 60%);
+  opacity: 0.9;
+  filter: blur(2px);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -140px;
+  left: -100px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(88, 130, 255, 0.25), transparent 60%);
+  opacity: 0.8;
+  filter: blur(2px);
+}
+
+.card-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Hero */
+
+.hero-title {
+  font-size: 2.4rem;
+  margin-bottom: 6px;
+}
+
+.hero-subtitle {
+  color: var(--text-soft);
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+
+.hero-pill {
+  display: inline-flex;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-soft);
+  background: rgba(8, 12, 30, 0.9);
+  color: var(--accent);
+  font-size: 0.8rem;
+  margin-bottom: 14px;
+}
+
+/* Sections */
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 26px 0 10px;
+}
+
+h3 {
+  font-size: 1.05rem;
+  margin: 18px 0 8px;
+}
+
+p {
+  color: var(--text-soft);
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 6px 0 14px 20px;
+  color: var(--text-soft);
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+.section {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Highlight */
+
+.highlight {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 26px;
+  font-size: 0.85rem;
+  color: rgba(196, 200, 216, 0.7);
+  text-align: center;
+}
 
