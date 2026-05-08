@@ -2,181 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FocusFlow – Calm AI Coaching for Focus & Wellbeing</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="FocusFlow is a calm AI coaching app designed to support focus, relaxation, and emotional wellbeing through guided conversations, focus sessions, and mindfulness tools." />
-  <style>
-    :root {
-      --bg: #050814;
-      --bg2: #0b1022;
-      --accent: #35d0c8;
-      --accent-soft: rgba(53, 208, 200, 0.25);
-      --text-main: #f7f9ff;
-      --text-soft: #c4c8d8;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-      background: radial-gradient(circle at top, #101735 0, var(--bg) 45%, #02030a 100%);
-      color: var(--text-main);
-      line-height: 1.7;
-      padding: 32px 16px 48px;
-      display: flex;
-      justify-content: center;
-    }
-    .page {
-      width: 100%;
-      max-width: 900px;
-    }
-    .card {
-      background: radial-gradient(circle at top left, rgba(53, 208, 200, 0.08), rgba(8, 10, 24, 0.96));
-      border-radius: 24px;
-      padding: 36px 28px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(18px);
-    }
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin: 32px 0 12px;
-    }
-    h3 {
-      font-size: 1.15rem;
-      margin: 20px 0 8px;
-    }
-    p {
-      color: var(--text-soft);
-      margin-bottom: 14px;
-    }
-    ul {
-      margin: 8px 0 14px 22px;
-      color: var(--text-soft);
-    }
-    li { margin-bottom: 6px; }
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: rgba(8, 14, 32, 0.9);
-      border: 1px solid var(--accent-soft);
-      color: var(--accent);
-      font-size: 0.8rem;
-      margin-bottom: 20px;
-    }
-    .tagline {
-      color: var(--text-soft);
-      margin-bottom: 22px;
-      font-size: 1.1rem;
-    }
-    .section {
-      margin-top: 28px;
-      padding-top: 22px;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
-    }
-    .highlight {
-      color: var(--accent);
-      font-weight: 500;
-    }
-    .footer {
-      margin-top: 32px;
-      font-size: 0.85rem;
-      color: rgba(196, 200, 216, 0.7);
-      text-align: center;
-    }
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
-  </style>
+  <title>FocusFlow – Calm AI Coach</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main class="page">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
+
     <section class="card">
-      <div class="pill">FocusFlow · Calm AI Coaching</div>
-      <h1>FocusFlow</h1>
-      <p class="tagline">
-        A calm AI coach designed to support focus, relaxation, and emotional wellbeing through guided conversations and mindful tools.
-      </p>
-
-      <div class="section">
-        <h2>About FocusFlow</h2>
-        <p>
-          FocusFlow is a modern wellbeing application that blends AI‑powered guidance with mindfulness and productivity tools. 
-          The goal is simple: to provide a quiet, supportive space where users can focus deeply, unwind intentionally, and reflect on their emotional state without pressure.
-        </p>
-        <p>
-          The app is built around a conversational AI Coach that responds with warmth, clarity, and emotional intelligence. 
-          Whether you are preparing for deep work, managing stress, or simply checking in with yourself, FocusFlow adapts to your needs.
+      <div class="card-inner">
+        <div class="hero-pill">FocusFlow · Calm AI Coaching</div>
+        <h1 class="hero-title">FocusFlow</h1>
+        <p class="hero-subtitle">
+          A calm AI coach that helps you focus, unwind, and check in with yourself—without pressure.
         </p>
 
-        <h3>Core Capabilities</h3>
-        <ul>
-          <li><span class="highlight">AI Coaching</span> – Engage in natural, supportive conversations tailored to your emotional and productivity needs.</li>
-          <li><span class="highlight">Focus Sessions</span> – Use structured deep‑work timers to maintain concentration and reduce distractions.</li>
-          <li><span class="highlight">Relaxation Tools</span> – Access short breathing exercises and calming experiences to help reset your mind.</li>
-          <li><span class="highlight">Daily Emotional Check‑Ins</span> – Reflect on your wellbeing with gentle prompts and guided insights.</li>
-          <li><span class="highlight">Progress Insights</span> – Track patterns in your focus, mood, and habits over time.</li>
-        </ul>
-      </div>
+        <div class="section">
+          <h2>About FocusFlow</h2>
+          <p>
+            FocusFlow is a wellbeing and productivity app that blends AI‑powered guidance with
+            gentle focus and relaxation tools. It is designed to feel like a quiet, supportive
+            space rather than another demanding productivity dashboard.
+          </p>
+        </div>
 
-      <div class="section">
-        <h2>Support</h2>
-        <p>
-          For assistance, feedback, or general inquiries regarding FocusFlow, please contact:
-        </p>
-        <p>
-          📧 <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-        </p>
-        <p>
-          Support requests are typically responded to within 2–3 business days.
-        </p>
-      </div>
+        <div class="section">
+          <h2>What You Can Do</h2>
+          <ul>
+            <li><span class="highlight">Talk to your AI Coach</span> for warm, supportive conversations.</li>
+            <li><span class="highlight">Run focus sessions</span> with deep‑work timers.</li>
+            <li><span class="highlight">Take a moment to relax</span> with short calming tools.</li>
+            <li><span class="highlight">Check in daily</span> with your mood and mental state.</li>
+            <li><span class="highlight">See patterns</span> in your focus and wellbeing over time.</li>
+          </ul>
+        </div>
 
-      <div class="section">
-        <h2>Privacy Policy</h2>
-        <p>
-          FocusFlow is committed to protecting your privacy and ensuring transparency in how your information is handled. 
-          This policy outlines the types of data collected, how it is used, and the measures taken to safeguard your information.
-        </p>
+        <div class="section">
+          <h2>Support</h2>
+          <p>
+            For questions, feedback, or support, please contact:
+          </p>
+          <p>
+            Email:
+            <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
+          </p>
+        </div>
 
-        <h3>Information We Collect</h3>
-        <ul>
-          <li><strong>Usage Data:</strong> Anonymous information about how you interact with the app, used to improve performance and user experience.</li>
-          <li><strong>Crash Logs:</strong> Technical data automatically collected in the event of an app crash, used solely for debugging and stability improvements.</li>
-          <li><strong>User‑Provided Content:</strong> Text you voluntarily enter into the AI Coach. This content is processed to generate responses but is not used for advertising or profiling.</li>
-        </ul>
-
-        <h3>How Your Information Is Used</h3>
-        <ul>
-          <li>To maintain and improve app functionality and stability.</li>
-          <li>To provide AI‑generated responses and personalized guidance.</li>
-          <li>To analyze general usage patterns for product improvement.</li>
-        </ul>
-
-        <h3>Data Sharing & Third‑Party Services</h3>
-        <p>
-          FocusFlow may use third‑party analytics or crash reporting tools. These services receive only the minimum data required to perform their function. 
-          No personal data is sold or shared for marketing purposes.
-        </p>
-
-        <h3>Your Rights & Contact</h3>
-        <p>
-          If you have questions about your data, or wish to request additional information, please contact:
-        </p>
-        <p>
-          📧 <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>
-        </p>
-      </div>
-
-      <div class="footer">
-        © 2026 FocusFlow · All Rights Reserved  
-        <br />Developed in Australia
+        <div class="footer">
+          © 2026 FocusFlow · All Rights Reserved
+        </div>
       </div>
     </section>
   </main>
